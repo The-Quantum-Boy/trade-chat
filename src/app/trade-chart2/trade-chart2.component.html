@@ -1,0 +1,14 @@
+<div class="toolbar">
+  <button id="one_day" (click)="onButtonClick('one_day')" [ngClass]="{'active': activeButton === 'one_day'}">1D</button>
+  <button id="one_month" (click)="onButtonClick('one_month')"
+    [ngClass]="{'active': activeButton === 'one_month'}">1M</button>
+  <button id="six_months" (click)="onButtonClick('six_months')"
+    [ngClass]="{'active': activeButton === 'six_months'}">6M</button>
+  <button id="one_year" (click)="onButtonClick('one_year')"
+    [ngClass]="{'active': activeButton === 'one_year'}">1Y</button>
+  <button id="all" (click)="onButtonClick('all')" [ngClass]="{'active': activeButton === 'all'}">ALL</button>
+</div>
+
+<div id="chart">
+  <div id="chart-timeline"></div>
+</div>
